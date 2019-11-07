@@ -15,6 +15,9 @@
 		B04049EF2373F61B00241FCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04049ED2373F61B00241FCD /* LaunchScreen.storyboard */; };
 		B04049FA2373F61B00241FCD /* SwiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04049F92373F61B00241FCD /* SwiftUIDemoTests.swift */; };
 		B0404A052373F61B00241FCD /* SwiftUIDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0404A042373F61B00241FCD /* SwiftUIDemoUITests.swift */; };
+		B0404A1323740A4F00241FCD /* Rooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0404A1223740A4F00241FCD /* Rooms.swift */; };
+		B0404A1523740FCC00241FCD /* Rooms.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0404A1423740FCC00241FCD /* Rooms.xcassets */; };
+		B0404A172374113E00241FCD /* SwiftUI.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B0404A162374113E00241FCD /* SwiftUI.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		B0404A002373F61B00241FCD /* SwiftUIDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0404A042373F61B00241FCD /* SwiftUIDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoUITests.swift; sourceTree = "<group>"; };
 		B0404A062373F61B00241FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0404A1223740A4F00241FCD /* Rooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rooms.swift; sourceTree = "<group>"; };
+		B0404A1423740FCC00241FCD /* Rooms.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Rooms.xcassets; sourceTree = "<group>"; };
+		B0404A162374113E00241FCD /* SwiftUI.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = SwiftUI.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				B04049E22373F61A00241FCD /* AppDelegate.swift */,
 				B04049E42373F61A00241FCD /* SceneDelegate.swift */,
 				B04049E62373F61A00241FCD /* ContentView.swift */,
+				B0404A162374113E00241FCD /* SwiftUI.rtf */,
+				B0404A1223740A4F00241FCD /* Rooms.swift */,
+				B0404A1423740FCC00241FCD /* Rooms.xcassets */,
 				B04049E82373F61B00241FCD /* Assets.xcassets */,
 				B04049ED2373F61B00241FCD /* LaunchScreen.storyboard */,
 				B04049F02373F61B00241FCD /* Info.plist */,
@@ -241,7 +250,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B04049EF2373F61B00241FCD /* LaunchScreen.storyboard in Resources */,
+				B0404A172374113E00241FCD /* SwiftUI.rtf in Resources */,
 				B04049EC2373F61B00241FCD /* Preview Assets.xcassets in Resources */,
+				B0404A1523740FCC00241FCD /* Rooms.xcassets in Resources */,
 				B04049E92373F61B00241FCD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +280,7 @@
 			files = (
 				B04049E32373F61A00241FCD /* AppDelegate.swift in Sources */,
 				B04049E52373F61A00241FCD /* SceneDelegate.swift in Sources */,
+				B0404A1323740A4F00241FCD /* Rooms.swift in Sources */,
 				B04049E72373F61A00241FCD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
