@@ -18,6 +18,7 @@
 		B0404A1323740A4F00241FCD /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0404A1223740A4F00241FCD /* Room.swift */; };
 		B0404A1523740FCC00241FCD /* Rooms.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0404A1423740FCC00241FCD /* Rooms.xcassets */; };
 		B0404A172374113E00241FCD /* SwiftUI.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B0404A162374113E00241FCD /* SwiftUI.rtf */; };
+		B095E9DA2375E8B900F646C4 /* RoomDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095E9D92375E8B900F646C4 /* RoomDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		B0404A1223740A4F00241FCD /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		B0404A1423740FCC00241FCD /* Rooms.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Rooms.xcassets; sourceTree = "<group>"; };
 		B0404A162374113E00241FCD /* SwiftUI.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = SwiftUI.rtf; sourceTree = "<group>"; };
+		B095E9D92375E8B900F646C4 /* RoomDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				B04049E22373F61A00241FCD /* AppDelegate.swift */,
 				B04049E42373F61A00241FCD /* SceneDelegate.swift */,
 				B04049E62373F61A00241FCD /* ContentView.swift */,
+				B095E9D92375E8B900F646C4 /* RoomDetails.swift */,
 				B0404A162374113E00241FCD /* SwiftUI.rtf */,
 				B0404A1223740A4F00241FCD /* Room.swift */,
 				B0404A1423740FCC00241FCD /* Rooms.xcassets */,
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B04049E32373F61A00241FCD /* AppDelegate.swift in Sources */,
+				B095E9DA2375E8B900F646C4 /* RoomDetails.swift in Sources */,
 				B04049E52373F61A00241FCD /* SceneDelegate.swift in Sources */,
 				B0404A1323740A4F00241FCD /* Room.swift in Sources */,
 				B04049E72373F61A00241FCD /* ContentView.swift in Sources */,
