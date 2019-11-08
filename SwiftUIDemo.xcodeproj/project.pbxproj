@@ -17,7 +17,7 @@
 		B0404A052373F61B00241FCD /* SwiftUIDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0404A042373F61B00241FCD /* SwiftUIDemoUITests.swift */; };
 		B0404A1323740A4F00241FCD /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0404A1223740A4F00241FCD /* Room.swift */; };
 		B0404A1523740FCC00241FCD /* Rooms.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0404A1423740FCC00241FCD /* Rooms.xcassets */; };
-		B0404A172374113E00241FCD /* SwiftUI.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B0404A162374113E00241FCD /* SwiftUI.rtf */; };
+		B0404A172374113E00241FCD /* SwiftUI.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = B0404A162374113E00241FCD /* SwiftUI.rtfd */; };
 		B095E9DA2375E8B900F646C4 /* RoomDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095E9D92375E8B900F646C4 /* RoomDetails.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +55,7 @@
 		B0404A062373F61B00241FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0404A1223740A4F00241FCD /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		B0404A1423740FCC00241FCD /* Rooms.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Rooms.xcassets; sourceTree = "<group>"; };
-		B0404A162374113E00241FCD /* SwiftUI.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = SwiftUI.rtf; sourceTree = "<group>"; };
+		B0404A162374113E00241FCD /* SwiftUI.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = SwiftUI.rtfd; sourceTree = "<group>"; };
 		B095E9D92375E8B900F646C4 /* RoomDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +111,7 @@
 				B04049E42373F61A00241FCD /* SceneDelegate.swift */,
 				B04049E62373F61A00241FCD /* ContentView.swift */,
 				B095E9D92375E8B900F646C4 /* RoomDetails.swift */,
-				B0404A162374113E00241FCD /* SwiftUI.rtf */,
+				B0404A162374113E00241FCD /* SwiftUI.rtfd */,
 				B0404A1223740A4F00241FCD /* Room.swift */,
 				B0404A1423740FCC00241FCD /* Rooms.xcassets */,
 				B04049E82373F61B00241FCD /* Assets.xcassets */,
@@ -253,7 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B04049EF2373F61B00241FCD /* LaunchScreen.storyboard in Resources */,
-				B0404A172374113E00241FCD /* SwiftUI.rtf in Resources */,
+				B0404A172374113E00241FCD /* SwiftUI.rtfd in Resources */,
 				B04049EC2373F61B00241FCD /* Preview Assets.xcassets in Resources */,
 				B0404A1523740FCC00241FCD /* Rooms.xcassets in Resources */,
 				B04049E92373F61B00241FCD /* Assets.xcassets in Resources */,

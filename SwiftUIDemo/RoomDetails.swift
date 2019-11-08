@@ -15,15 +15,28 @@ struct RoomDetails: View {
     let room : Room
     
     var body: some View {
-        Image(room.thumbnailName)
-            .resizable()
-            .aspectRatio(contentMode: zoomed ? .fill : .fit)
-            .navigationBarTitle(Text(room.name), displayMode: .inline)
-            .onTapGesture {
-                self.zoomed.toggle()
+        
+        ZStack(alignment: .topLeading) {
+                    Image(room.thumbnailName)
+                    .resizable()
+                    .aspectRatio(contentMode: zoomed ? .fill : .fit)
+                    .navigationBarTitle(Text(room.name), displayMode: .inline)
+                    .onTapGesture {
+                        withAnimation {
+                            self.zoomed.toggle()
+                        }
+                    }
+                    .frame(minWidth : 0 , maxWidth: .infinity,minHeight:  0 ,maxHeight: .infinity)
+                
+            
+            Image(systemName: "video.fill")
+                .padding(.all)
+                .font(.title)
+            
+            }
         }
-    
-    }
+        
+
 }
 
 struct RoomDetails_Previews: PreviewProvider {

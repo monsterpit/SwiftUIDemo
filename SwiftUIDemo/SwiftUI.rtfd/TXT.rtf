@@ -235,7 +235,8 @@ The rendering of any view you build is just rendering of its body \
 \
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-\cf0 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-11-09 at 12.37.38 AM.png \width23680 \height12380 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 \cf0 \
 \pard\tx593\pardeftab593\pardirnatural\partightenfactor0
 \cf0 \
@@ -258,7 +259,8 @@ The framework knows when to fetch a new rendering of a view because in addition 
 \
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-\cf0 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-11-09 at 12.43.07 AM.png \width18340 \height6980 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 \cf0 \
 \pard\tx593\pardeftab593\pardirnatural\partightenfactor0
 \cf0 \
@@ -277,7 +279,8 @@ because the zoomed here is read and write it knows view's rendering depends on i
 which means when the variable changes  the framework is going to ask for body again using the new state value , So can refresh the rendering this time with a different content mode \
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-\cf0 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-11-09 at 12.57.35 AM.png \width5960 \height4420 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 \cf0 \
 \pard\tx593\pardeftab593\pardirnatural\partightenfactor0
 \cf0 \
@@ -306,7 +309,8 @@ This is the mechanism by which all drive values in SwiftUI are kept up to date \
 \
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-\cf0 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-11-09 at 1.02.39 AM.png \width15980 \height10740 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 \cf0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 \cf0 \
@@ -314,11 +318,66 @@ This is the mechanism by which all drive values in SwiftUI are kept up to date \
 @State variable for Source of truth\cf0 \
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-\cf0 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-11-09 at 1.07.28 AM.png \width15100 \height8740 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 \cf0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 \cf0 State variable and your model constitute the source of truth for your entire app and so we have bindable object protocol ,\
 To observe changes from your model \
  \
+\
+\
+\
+Adding animation in SwiftUI is easy as wrapping within \
+withAnimation \{\}\
+\
+\
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3                 \cf10 \cb3 withAnimation\cf2 \cb3  \{\
+                    
+\f4\b \cf19 \cb3 self
+\f1\b0 \cf2 \cb3 .\cf9 \cb3 zoomed\cf2 \cb3 .\cf10 \cb3 toggle\cf2 \cb3 ()\
+                \}\
+\
+
+\f0 \cf0 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+Having a Flexible frame to fit the View\
+\
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3                     .\cf10 \cb3 frame\cf2 \cb3 (minWidth : \cf22 \cb3 0\cf2 \cb3  , maxWidth: .\cf4 infinity\cf2 ,minHeight:  \cf22 \cb3 0\cf2 \cb3  ,maxHeight: .\cf4 infinity\cf2 )\
+
+\f0 \cf0 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+This makes the View take the whole View that is invisible frame too for area\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
 \
 }
