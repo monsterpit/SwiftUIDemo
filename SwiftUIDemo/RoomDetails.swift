@@ -10,17 +10,24 @@ import SwiftUI
 
 struct RoomDetails: View {
     
+    @State private var zoomed : Bool = false
+    
     let room : Room
     
     var body: some View {
         Image(room.thumbnailName)
             .resizable()
-            .aspectRatio(contentMode: .fit)
+            .aspectRatio(contentMode: zoomed ? .fill : .fit)
+            .navigationBarTitle(Text(room.name), displayMode: .inline)
+            .onTapGesture {
+                self.zoomed.toggle()
+        }
+    
     }
 }
 
 struct RoomDetails_Previews: PreviewProvider {
     static var previews: some View {
-        RoomDetails(room: testData[0])
+        NavigationView { RoomDetails(room: testData[0]) }
     }
 }

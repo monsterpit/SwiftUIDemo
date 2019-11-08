@@ -1,14 +1,18 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2511
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 HelveticaNeue;
-\f3\fswiss\fcharset0 ArialMT;}
+\f3\fswiss\fcharset0 ArialMT;\f4\fnil\fcharset0 Menlo-Bold;}
 {\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red31\green31\blue36;\red161\green103\blue230;
-\red208\green168\blue255;\red81\green119\blue255;\red252\green41\blue42;\red252\green36\blue38;\red208\green168\blue255;
-\red103\green183\blue164;\red158\green241\blue221;\red252\green43\blue42;\red161\green103\blue230;\red252\green106\blue93;
-\red27\green29\blue31;\red235\green236\blue237;\red255\green255\blue255;}
+\red208\green168\blue255;\red81\green119\blue255;\red252\green43\blue42;\red208\green168\blue255;\red103\green183\blue164;
+\red161\green103\blue230;\red252\green41\blue42;\red252\green36\blue38;\red158\green241\blue221;\red252\green43\blue42;
+\red252\green106\blue93;\red27\green29\blue31;\red235\green236\blue237;\red255\green255\blue255;\red252\green95\blue163;
+\red93\green216\blue255;\red65\green161\blue192;\red208\green191\blue105;\red252\green71\blue48;\red252\green58\blue47;
+}
 {\*\expandedcolortbl;;\csgenericrgb\c100000\c100000\c100000\c85000;\csgenericrgb\c12054\c12284\c14131;\csgenericrgb\c63232\c40219\c90115;
-\csgenericrgb\c81569\c65882\c100000;\cssrgb\c38876\c56134\c100000;\cssrgb\c100000\c26242\c21082;\cssrgb\c100000\c24428\c19457;\csgenericrgb\c81681\c65692\c99927;
-\csgenericrgb\c40538\c71705\c64209;\csgenericrgb\c62145\c94386\c86819;\cssrgb\c100000\c27023\c21210;\csgenericrgb\c63137\c40392\c90196;\csgenericrgb\c98912\c41558\c36568;
-\cssrgb\c14118\c15294\c16078;\cssrgb\c93725\c94118\c94510;\cssrgb\c100000\c100000\c100000;}
+\csgenericrgb\c81569\c65882\c100000;\cssrgb\c38876\c56134\c100000;\cssrgb\c100000\c27023\c21210;\csgenericrgb\c81681\c65692\c99927;\csgenericrgb\c40538\c71705\c64209;
+\csgenericrgb\c63137\c40392\c90196;\cssrgb\c100000\c26242\c21082;\cssrgb\c100000\c24428\c19457;\csgenericrgb\c62145\c94386\c86819;\cssrgb\c100000\c27023\c21210;
+\csgenericrgb\c98912\c41558\c36568;\cssrgb\c14118\c15294\c16078;\cssrgb\c93725\c94118\c94510;\cssrgb\c100000\c100000\c100000;\csgenericrgb\c98839\c37355\c63833;
+\csgenericrgb\c36295\c84643\c99897;\csgenericrgb\c25490\c63137\c75294;\csgenericrgb\c81498\c74939\c41233;\cssrgb\c100000\c37421\c24217;\cssrgb\c100000\c32522\c23570;
+}
 \margl1440\margr1440\vieww9000\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
@@ -53,21 +57,35 @@ Text("hello wolrd")\
 List requires a model which conforms to Identifiable protocol and model should have id property too , to identify which once is unique \
 \
 \
-\cf7 NavigationView :-\cf0 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf7 Setting Image , resizing and aspect ratio the image :-\cf0 \
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3         \cf8 \cb3 Image\cf2 \cb3 (\cf9 \cb3 room\cf2 \cb3 .\cf9 \cb3 thumbnailName\cf2 \cb3 )    //Image in its native resolution\
+            .\cf10 \cb3 resizable\cf2 \cb3 ()             // resizable makes image to stretch in either dimensions\
+            .\cf10 \cb3 aspectRatio\cf2 \cb3 (contentMode: .\cf4 fit\cf2 )   // a view that proportional scales its child\
+
+\f0 \cf0 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\cf11 NavigationView :-\cf0 \
 Show's a navigation bar and also has a stack to push views onto\
 \
 \
-\cf8 NavigationLink :-\
+\cf12 NavigationLink :-\
 \cf0 \
 \pard\tx593\pardeftab593\pardirnatural\partightenfactor0
 
-\f1 \cf9 \cb3 NavigationLink\cf2 \cb3 (destination: \cf9 \cb3 Text\cf2 \cb3 (room.\cf10 \cb3 name\cf2 \cb3 ))
+\f1 \cf8 \cb3 NavigationLink\cf2 \cb3 (destination: \cf8 \cb3 Text\cf2 \cb3 (room.\cf9 \cb3 name\cf2 \cb3 ))
 \f0 \cf0 \cb1 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 \cf0 \
 \pard\tx593\pardeftab593\pardirnatural\partightenfactor0
 
-\f1 \cf9 \cb3 NavigationLink\cf2 \cb3 (destination: \cf11 \cb3 RoomDetails\cf2 \cb3 (room: \cf10 \cb3 room\cf2 \cb3 ))
+\f1 \cf8 \cb3 NavigationLink\cf2 \cb3 (destination: \cf13 \cb3 RoomDetails\cf2 \cb3 (room: \cf9 \cb3 room\cf2 \cb3 ))
 \f0 \cf0 \cb1 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 \cf0 \
@@ -76,11 +94,11 @@ To push a view to navigationStack\
 \
 \
 \
-\cf12 Setting NavigationBar title name :-\cf0 \
+\cf14 Setting NavigationBar title name :-\cf0 \
 \
 \pard\tx593\pardeftab593\pardirnatural\partightenfactor0
 
-\f1 \cf2 \cb3 .\cf13 \cb3 navigationBarTitle\cf2 \cb3 (\cf9 \cb3 Text\cf2 \cb3 (\cf14 \cb3 "Rooms"\cf2 \cb3 ))
+\f1 \cf2 \cb3 .\cf10 \cb3 navigationBarTitle\cf2 \cb3 (\cf8 \cb3 Text\cf2 \cb3 (\cf15 \cb3 "Rooms"\cf2 \cb3 ))
 \f0 \cf0 \cb1 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 \cf0 \
@@ -88,26 +106,64 @@ Its a modifier for the view that is inside the navigationView\
 \
 \pard\pardeftab720\partightenfactor0
 
-\f1\fs26 \cf15 \cb16 \expnd0\expndtw0\kerning0
+\f1\fs26 \cf16 \cb17 \expnd0\expndtw0\kerning0
 .navigationBarTitle()
-\f3\fs30 \cb17  and 
-\f1\fs26 \cb16 .navigationBarItem()
-\f3\fs30 \cb17  are modifiers on the 
-\f1\fs26 \cb16 View
-\f3\fs30 \cb17  inside of the 
-\f1\fs26 \cb16 NavigationView
-\f3\fs30 \cb17 , not on the 
-\f1\fs26 \cb16 NavigationView
-\f3\fs30 \cb17  itself:\
+\f3\fs30 \cb18  and 
+\f1\fs26 \cb17 .navigationBarItem()
+\f3\fs30 \cb18  are modifiers on the 
+\f1\fs26 \cb17 View
+\f3\fs30 \cb18  inside of the 
+\f1\fs26 \cb17 NavigationView
+\f3\fs30 \cb18 , not on the 
+\f1\fs26 \cb17 NavigationView
+\f3\fs30 \cb18  itself:\
 and if you think about it, this makes sense. As the 
-\f1\fs26 \cb16 View
-\f3\fs30 \cb17  within the 
-\f1\fs26 \cb16 NavigationView
-\f3\fs30 \cb17  changes, the new 
-\f1\fs26 \cb16 View
-\f3\fs30 \cb17  dictates what the title and contents of the navigation bar should be.\
+\f1\fs26 \cb17 View
+\f3\fs30 \cb18  within the 
+\f1\fs26 \cb17 NavigationView
+\f3\fs30 \cb18  changes, the new 
+\f1\fs26 \cb17 View
+\f3\fs30 \cb18  dictates what the title and contents of the navigation bar should be.\
 \
 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf7 \kerning1\expnd0\expndtw0 Setting NavigationBar title name display Mode :-\
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 .\cf10 \cb3 navigationBarTitle\cf2 \cb3 (\cf8 \cb3 Text\cf2 \cb3 (\cf9 \cb3 room\cf2 \cb3 .\cf9 \cb3 name\cf2 \cb3 ), displayMode: .\cf4 inline\cf2 )
+\f0 \cf7 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf7 \
+
+\f3\fs30 \cf16 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+\cf16 \
+\
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f4\b\fs24 \cf19 \cb3 \kerning1\expnd0\expndtw0 struct
+\f1\b0 \cf2 \cb3  \cf20 \cb3 RoomDetails_Previews\cf2 \cb3 : \cf8 \cb3 PreviewProvider\cf2 \cb3  \{\
+    
+\f4\b \cf19 \cb3 static
+\f1\b0 \cf2 \cb3  
+\f4\b \cf19 \cb3 var
+\f1\b0 \cf2 \cb3  \cf21 \cb3 previews\cf2 \cb3 : 
+\f4\b \cf19 \cb3 some
+\f1\b0 \cf2 \cb3  \cf8 \cb3 View\cf2 \cb3  \{\
+        \cf13 \cb3 RoomDetails\cf2 \cb3 (room: \cf9 \cb3 testData\cf2 \cb3 [\cf22 \cb3 0\cf2 \cb3 ]) \
+    \}\
+\}\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f3\fs30 \cf16 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+\cf16 Previews has all the powers of SwiftUI Views available \
+So we can set the view in preview in navigationView too \
 \pard\tx593\pardeftab593\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
@@ -115,7 +171,154 @@ and if you think about it, this makes sense. As the
 \cf0 \
 \pard\tx593\pardeftab593\pardirnatural\partightenfactor0
 \cf0 \
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f4\b \cf19 \cb3 struct
+\f1\b0 \cf2 \cb3  \cf20 \cb3 RoomDetails_Previews\cf2 \cb3 : \cf8 \cb3 PreviewProvider\cf2 \cb3  \{\
+    
+\f4\b \cf19 \cb3 static
+\f1\b0 \cf2 \cb3  
+\f4\b \cf19 \cb3 var
+\f1\b0 \cf2 \cb3  \cf21 \cb3 previews\cf2 \cb3 : 
+\f4\b \cf19 \cb3 some
+\f1\b0 \cf2 \cb3  \cf8 \cb3 View\cf2 \cb3  \{\
+        \cf8 \cb3 NavigationView\cf2 \cb3  \{ \cf13 \cb3 RoomDetails\cf2 \cb3 (room: \cf9 \cb3 testData\cf2 \cb3 [\cf22 \cb3 0\cf2 \cb3 ]) \}\
+    \}\
+\}\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+In SwiftUI\
+\
+\
+A View is a struct conforms to View Protocol rather than a class that inherit from base class like UIView\
+This means your View doesnt inherit any stored property \
+and it's allocated on stack \
+and is passed by value\
+\
+e.g. RoomDetail store a Room so it has a size and weight of Room , no additional allocation or referencing counting overhead\
+\
+Behind the scene SwiftUI aggressively collapses your Views hierarchy into a efficient data structure for rendering \
+Because of this we make liberal use of small single purpose Views in SwiftUI \
+\
+\
+Views in SwiftUI are incredibly lightweight \
+You should ever hesitate to refactor your SwiftUI code because extracting a subView has virtually no runtime overhead \
+\
+\
+A View defines a Piece of UI \
+\
+\
+\
+So a View in SwiftUi and UIView in UIKit fulfil the same primary work they define a piece of UI \
+\
+\
+View protocol has only a single  requirement a body property  which is itself a View \
+The rendering of any view you build is just rendering of its body \
+\
+\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+\cf0 \
+If you set a breakpoint in Your View , It means your framework has decided it needs a fresh rendering of your  view\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+A view defines its dependencies \
+The framework knows when to fetch a new rendering of a view because in addition to defining a piece of UI in swiftUi a view defines its dependencies\
+\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+\cf0 \
+@State private var zoomed = false\
+\
+@State  
+\f2\fs22 \cf23 \expnd0\expndtw0\kerning0
+A persistent value of a given type, through which a view reads and monitors the value
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+when SwiftUi sees a view with a state variable it allocates storage for that variable on the view's behalf   \
+\
+one of the special property of SwiftUI is it can observe @State variable when they are read or write\
+\
+because the zoomed here is read and write it knows view's rendering depends on it \
+which means when the variable changes  the framework is going to ask for body again using the new state value , So can refresh the rendering this time with a different content mode \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+\cf0 \
+\
+So traditional UI Framework dont distinguish between state variables and plain old properties \
+\
+\
+In SwiftUI every possible state your UI might find itself in\
+e.g. offset of a scrollView , highlighting of a button \
+The contents of a navigation stack is derived from an authoritative piece of data often called a source of truth , \
+collectively your state variables in your model constitute your source of truth for your entire application   \
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 you can classify the property has source of truth or derived value \
+The zoomed state variable is a source of truth \
+content mode property is derived from it \
+\
+\
+SwiftUi can observe when state variables are  read and written so when one changes it knows which renderings to refresh.\
+The framework refreshes our rendering by asking for a new body , making a new aspect ratio of you from scratch thereby overriding the content mode and any other stored properties \
+\
+This is the mechanism by which all drive values in SwiftUI are kept up to date \
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 \cf0 \
+\cf24 Every plain old property is a derived value\
+@State variable for Source of truth\cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 State variable and your model constitute the source of truth for your entire app and so we have bindable object protocol ,\
+To observe changes from your model \
+ \
 \
 }
