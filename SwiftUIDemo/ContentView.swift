@@ -10,19 +10,21 @@ import SwiftUI
 
 struct ContentView: View {
     
-    
+    var rooms : [Room] = []
     
     var body: some View {
        
             
-        List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-            Image(systemName: "photo")
+        List(rooms) { room in
+            Image(room.thumbnailName)
+                .cornerRadius(8)
             
             VStack(alignment: .leading, spacing: 10.0){
-                Text("Hey There!")
+                Text(room.name)
                     .font(.subheadline)
+                    
                 
-                Text("20 People")
+                Text("\(room.capacity) People")
                     .foregroundColor(.secondary)
                 
             }
@@ -35,6 +37,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(rooms: testData)
     }
 }
