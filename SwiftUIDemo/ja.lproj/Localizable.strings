@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  SwiftUIDemo
+
+  Created by Mojave on 09/11/19.
+  Copyright © 2019 Mojave. All rights reserved.
+*/
+"Rooms" = "ルーム";
+"Add Rooms" = "ルーム";

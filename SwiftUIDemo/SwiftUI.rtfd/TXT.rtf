@@ -9,7 +9,8 @@
 \red93\green216\blue255;\red65\green161\blue192;\red208\green191\blue105;\red252\green71\blue48;\red252\green58\blue47;
 \red252\green21\blue39;\red158\green241\blue221;\red209\green44\blue51;\red212\green212\blue212;\red222\green43\blue91;
 \red209\green85\blue59;\red252\green86\blue72;\red103\green183\blue164;\red252\green33\blue37;\red251\green0\blue41;
-}
+\red252\green39\blue54;\red108\green121\blue134;\red251\green8\blue38;\red252\green29\blue54;\red252\green24\blue68;
+\red252\green35\blue38;}
 {\*\expandedcolortbl;;\csgenericrgb\c100000\c100000\c100000\c85000;\csgenericrgb\c12054\c12284\c14131;\csgenericrgb\c63232\c40219\c90115;
 \csgenericrgb\c81569\c65882\c100000;\cssrgb\c38876\c56134\c100000;\cssrgb\c100000\c22912\c36561\c85000;\csgenericrgb\c98912\c41558\c36568;\cssrgb\c100000\c27023\c21210;
 \csgenericrgb\c81681\c65692\c99927;\csgenericrgb\c40538\c71705\c64209;\csgenericrgb\c63137\c40392\c90196;\cssrgb\c100000\c26242\c21082;\cssrgb\c100000\c24428\c19457;
@@ -17,7 +18,8 @@
 \csgenericrgb\c36295\c84643\c99897;\csgenericrgb\c25490\c63137\c75294;\csgenericrgb\c81498\c74939\c41233;\cssrgb\c100000\c37421\c24217;\cssrgb\c100000\c32522\c23570;
 \cssrgb\c100000\c19088\c19815;\csgenericrgb\c61961\c94510\c86667;\cssrgb\c86275\c25944\c25907;\cssrgb\c86275\c86275\c86275;\cssrgb\c90588\c27059\c43137;
 \cssrgb\c86275\c42129\c29263;\cssrgb\c100000\c43061\c34988\c85000;\csgenericrgb\c40392\c71765\c64314;\cssrgb\c100000\c23286\c18571\c85000;\cssrgb\c100000\c13997\c20837\c85000;
-}
+\cssrgb\c100000\c25503\c27212\c85000;\csgenericrgb\c42394\c47462\c52518;\cssrgb\c100000\c15934\c19018\c85000;\cssrgb\c100000\c22029\c27137\c85000;\cssrgb\c100000\c20635\c33502\c85000;
+\cssrgb\c100000\c24019\c19238\c85000;}
 \margl1440\margr1440\vieww9000\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
@@ -605,5 +607,114 @@ Adding a static element to list of dynamic elements using Button action\
 we made Room type identifiable \
 ForEach automatically watches for changes to its collection and synthesises the correct insertions, deletions and changes for us \
 So we no longer need to tell the list to add and remove rows , which means we no longer need to worry about data source  inconsistency exceptions   \
+\
+\
+\
+\
+Environment is a way that you can set contextual information about your views that flows down the view hierarchy and changes different aspect of any contained views at all  once \
+ It's great for making  changes to a large set of views and its also great for customising your previews to see your views in different contexts\
+\
+\
+\
+\
+\
+\
+\
+\
+SwiftUi\
+\
+\
+\cf35 Declarative syntax \cf0 \
+which will evoke the actual Ui you are building and take care of those imperative details of like adding and removing  subviews on your behalf \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-11-09 at 1.08.30 PM.png \width6720 \height6240 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3         \cf36 \cb3 //Declarative syntax\cf2 \cb3 \
+        \cf10 ZStack\cf2 (alignment: .\cf4 topLeading\cf2 ) \{\
+            \cf10 Image\cf2 (\cf11 room\cf2 .\cf11 thumbnailName\cf2 )\
+                .\cf12 resizable\cf2 ()\
+                .\cf12 aspectRatio\cf2 (contentMode: \cf11 zoomed\cf2  ? .\cf4 fill\cf2  : .\cf4 fit\cf2 )\
+                .\cf12 navigationBarTitle\cf2 (\cf10 Text\cf2 (\cf11 room\cf2 .\cf11 name\cf2 ), displayMode: .\cf4 inline\cf2 )\
+                .\cf12 onTapGesture\cf2  \{\
+                    \cf12 withAnimation\cf2 (.\cf12 linear\cf2 (duration: \cf22 2\cf2 )) \{\
+                        
+\f4\b \cf19 self
+\f1\b0 \cf2 .\cf11 zoomed\cf2 .\cf12 toggle\cf2 ()\
+                    \}\
+            \}\
+            .\cf12 frame\cf2 (minWidth : \cf22 0\cf2  , maxWidth: .\cf4 infinity\cf2 ,minHeight:  \cf22 0\cf2  ,maxHeight: .\cf4 infinity\cf2 )\
+            \
+            
+\f4\b \cf19 if
+\f1\b0 \cf2  \cf11 room\cf2 .\cf11 hasVideos\cf2  \cf12 &&\cf2  \cf12 !\cf11 zoomed\cf2 \{\
+                \cf10 Image\cf2 (systemName: \cf8 "video.fill"\cf2 )\
+                    .\cf12 padding\cf2 (.\cf4 all\cf2 )\
+                    .\cf12 font\cf2 (.\cf4 title\cf2 )\
+                    .\cf12 transition\cf2 (.\cf12 move\cf2 (edge: .\cf4 leading\cf2 ))\
+            \}\
+        \}\
+\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\cf37 Compositional Pieces \cf0 \
+\
+how you can combine pieces of content modifiers and container to build exactly the UI you are looking for \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-11-09 at 1.09.05 PM.png \width6880 \height5280 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\cf38 Automatic Behaviours\cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-11-09 at 1.09.52 PM.png \width5920 \height3720 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+We saw all the automatic behaviour by saying less and let framework take care of more \
+\
+\
+\
+\
+\
+\cf39 Consistent state\cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-11-09 at 1.12.49 PM.png \width5780 \height3980 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+We saw how SwiftUi keeps Your Views in consistent state so you never end up with view missing or in the wrong place \
+ \
+\
+\
+\cf40 Interruptible Animation\cf0 \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-11-09 at 1.14.23 PM.png \width5680 \height4220 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+The goal of SwiftUi is for us to take care of  these basic feature that every app needs on your behalf.\
+\
 \
 }

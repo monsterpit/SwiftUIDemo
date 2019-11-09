@@ -18,6 +18,7 @@ struct RoomDetails: View {
     
     var body: some View {
         
+        //Declarative syntax
         ZStack(alignment: .topLeading) {
             Image(room.thumbnailName)
                 .resizable()
