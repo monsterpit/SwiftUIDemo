@@ -10,30 +10,34 @@ import SwiftUI
 
 struct ContentView: View {
     
-   // var rooms : [Room] = []
+    // var rooms : [Room] = []
     
     //Beta 3
-   // @ObjectBinding var store = RoomStore()
+    // @ObjectBinding var store = RoomStore()
     
     @ObservedObject var store = RoomStore()
     
     
     var body: some View {
-       
+        
         NavigationView{
             List{
                 
-                Button(action: addRoom) {
-                    Text("Add Room")
+                Section {
+                    Button(action: addRoom) {
+                        Text("Add Room")
+                    }
                 }
-                ForEach(store.rooms) { room in
-                    RoomCell(room: room)
+                Section {
+                    ForEach(store.rooms) { room in
+                        RoomCell(room: room)
+                    }
                 }
-                
                 
             }
             .navigationBarTitle(Text("Rooms"))
-            
+                //Applyinf style to List
+                .listStyle(GroupedListStyle())
         }
     }
     
