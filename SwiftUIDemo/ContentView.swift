@@ -32,6 +32,7 @@ struct ContentView: View {
                     ForEach(store.rooms) { room in
                         RoomCell(room: room)
                     }
+                    .onDelete(perform: delete)
                 }
                 
             }
@@ -44,6 +45,11 @@ struct ContentView: View {
     func addRoom(){
         store.rooms.append(Room(name: "Hall 2", capacity: 2000, hasVideos: false))
     }
+    
+    func delete(at offSet : IndexSet){
+        store.rooms.remove(atOffsets : offSet)
+    }
+    
 }
 
 struct RoomCell: View {
