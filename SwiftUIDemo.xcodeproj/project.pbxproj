@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B039DE36237682E100CA9B61 /* RoomStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B039DE35237682E100CA9B61 /* RoomStore.swift */; };
 		B04049E32373F61A00241FCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04049E22373F61A00241FCD /* AppDelegate.swift */; };
 		B04049E52373F61A00241FCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04049E42373F61A00241FCD /* SceneDelegate.swift */; };
 		B04049E72373F61A00241FCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04049E62373F61A00241FCD /* ContentView.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B039DE35237682E100CA9B61 /* RoomStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomStore.swift; sourceTree = "<group>"; };
 		B04049DF2373F61A00241FCD /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04049E22373F61A00241FCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B04049E42373F61A00241FCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				B04049E22373F61A00241FCD /* AppDelegate.swift */,
 				B04049E42373F61A00241FCD /* SceneDelegate.swift */,
 				B04049E62373F61A00241FCD /* ContentView.swift */,
+				B039DE35237682E100CA9B61 /* RoomStore.swift */,
 				B095E9D92375E8B900F646C4 /* RoomDetails.swift */,
 				B0404A162374113E00241FCD /* SwiftUI.rtfd */,
 				B0404A1223740A4F00241FCD /* Room.swift */,
@@ -285,6 +288,7 @@
 				B095E9DA2375E8B900F646C4 /* RoomDetails.swift in Sources */,
 				B04049E52373F61A00241FCD /* SceneDelegate.swift in Sources */,
 				B0404A1323740A4F00241FCD /* Room.swift in Sources */,
+				B039DE36237682E100CA9B61 /* RoomStore.swift in Sources */,
 				B04049E72373F61A00241FCD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

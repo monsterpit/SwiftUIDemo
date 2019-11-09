@@ -10,12 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var rooms : [Room] = []
+   // var rooms : [Room] = []
+    
+    //Beta 3
+   // @ObjectBinding var store = RoomStore()
+    
+    @ObservedObject var store = RoomStore()
+    
     
     var body: some View {
        
         NavigationView{
-            List(rooms) { room in
+            List(store.rooms) { room in
                 
                 RoomCell(room: room)
                 
@@ -62,7 +68,7 @@ struct RoomCell: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(rooms: testData)
+        ContentView(store: RoomStore(rooms: testData))
     }
 }
 
