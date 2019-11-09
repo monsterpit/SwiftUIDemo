@@ -33,12 +33,14 @@ struct ContentView: View {
                         RoomCell(room: room)
                     }
                     .onDelete(perform: delete)
+                    .onMove(perform: move)
                 }
                 
             }
             .navigationBarTitle(Text("Rooms"))
-                //Applyinf style to List
+                //Applying style to List
                 .listStyle(GroupedListStyle())
+                .navigationBarItems(trailing: EditButton())
         }
     }
     
@@ -48,6 +50,11 @@ struct ContentView: View {
     
     func delete(at offSet : IndexSet){
         store.rooms.remove(atOffsets : offSet)
+    }
+    
+    func move(from source : IndexSet , to destination : Int)
+    {
+        store.rooms.move(fromOffsets: source, toOffset: destination)
     }
     
 }
