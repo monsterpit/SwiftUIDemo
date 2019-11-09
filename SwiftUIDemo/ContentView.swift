@@ -21,16 +21,24 @@ struct ContentView: View {
     var body: some View {
        
         NavigationView{
-            List(store.rooms) { room in
+            List{
                 
-                RoomCell(room: room)
+                Button(action: addRoom) {
+                    Text("Add Room")
+                }
+                ForEach(store.rooms) { room in
+                    RoomCell(room: room)
+                }
+                
                 
             }
             .navigationBarTitle(Text("Rooms"))
             
         }
-        
-
+    }
+    
+    func addRoom(){
+        store.rooms.append(Room(name: "Hall 2", capacity: 2000, hasVideos: false))
     }
 }
 
